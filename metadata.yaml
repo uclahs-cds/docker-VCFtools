@@ -6,5 +6,5 @@ Contributors: 'Timothy Sanders'
 Languages: ['bash']
 Tools: ['VCFtools']
 Version: ['0.1.16']
-Dependencies: ['docker', 'conda', 'bl-base']
+Dependencies: ['docker', 'conda', 'bl-base', 'tabix']
 References: 'https://vcftools.github.io/license.html'
