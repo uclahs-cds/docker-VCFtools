@@ -7,7 +7,9 @@ The image is located in the BLCDS repo: https://hub.docker.com/repository/docker
 
 # Documentation
 VCFtools main website [here](https://vcftools.github.io/index.html)
+
 VCFtools documentation [here](https://vcftools.github.io/examples.html)
+
 GitHub repository [here](https://github.com/vcftools/vcftools)
 
 # Version
