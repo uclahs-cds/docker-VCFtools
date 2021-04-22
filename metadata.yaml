@@ -1,6 +1,6 @@
 ---
 Category: 'docker'
-Description: 'Dockerfile for VCFtools'
+Description: 'Docker repository for VCFtools'
 Maintainers: ['tsanders@mednet.ucla.edu']
 Contributors: 'Timothy Sanders'
 Languages: ['bash']
