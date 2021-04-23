@@ -1,14 +1,14 @@
 ---
-name: Docker Bug report
+name: Docker Issue report
 about: Create a report to help us improve our Docker images
-title: "[DOCKER_BUG]"
+title: "[DOCKER_ISSUE]"
 labels: ''
 assignees: ''
 
 ---
 
-**Describe the bug**
-A clear and concise description of what the bug is. Please include the following in your bug report along with any explicit errors observed
+**Describe the issue**
+A clear and concise description of what the issue is. Please include the following in your issue report along with any explicit errors observed
 * Docker image release version
 * Cluster you are using (SGE/Slurm-Dev/Slurm-Test)
 * Config files (if applicable)
