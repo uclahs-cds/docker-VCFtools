@@ -13,7 +13,9 @@ VCFtools documentation [here](https://vcftools.github.io/examples.html)
 GitHub repository [here](https://github.com/vcftools/vcftools)
 
 # Version
-Current version: 0.1.16
+| Tool | Version |
+|------|---------|
+| VCFtools | 0.1.16 |
 
 
 ---
