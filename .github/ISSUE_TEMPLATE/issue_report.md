@@ -1,7 +1,7 @@
 ---
 name: Docker Issue report
 about: Create a report to help us improve our Docker images
-title: "[DOCKER_ISSUE]"
+title: ""
 labels: ''
 assignees: ''
 
