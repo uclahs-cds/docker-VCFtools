@@ -3,7 +3,9 @@ Repository for the VCFtools Dockerfile, a "package designed for working with VCF
 
 This Docker image contains both the C++ and Perl libraries for VCFtools. Additionally, tabix is installed in this image.
 
-The image is located in the Boutros Lab Docker Hub repo: https://hub.docker.com/repository/docker/blcdsdockerregistry/vcftools
+The image can be found in docker-VCFtools' GitHub package page: [here](https://github.com/uclahs-cds/docker-VCFtools/pkgs/container/vcftools)
+
+---
 
 # Documentation
 VCFtools main website [here](https://vcftools.github.io/index.html)
@@ -12,11 +14,26 @@ VCFtools documentation [here](https://vcftools.github.io/examples.html)
 
 GitHub repository [here](https://github.com/vcftools/vcftools)
 
+---
+
 # Version
 | Tool | Version |
 |------|---------|
 | VCFtools | 0.1.16 |
 
+---
+
+## Discussions
+
+- [Issue tracker](https://github.com/uclahs-cds/docker-VCFtools/issues) to report errors and enhancement ideas.
+- Discussions can take place in [docker-VCFtools Discussions](https://github.com/uclahs-cds/docker-VCFtools/discussions)
+- [docker-VCFtools pull requests](https://github.com/uclahs-cds/docker-VCFtools/pulls) are also open for discussion
+
+---
+
+## Contributors
+
+Please see list of [Contributors](https://github.com/uclahs-cds/docker-VCFtools/graphs/contributors) at GitHub.
 
 ---
 
@@ -24,3 +41,19 @@ GitHub repository [here](https://github.com/vcftools/vcftools)
 
 1. https://vcftools.github.io
 2. https://vcftools.github.io/license.html
+
+---
+
+## License
+
+Author: 'Timothy Sanders', 'Mohammed Faizal Eeman Mootor'
+
+docker-VCFtools is licensed under the GNU General Public License version 2. See the file LICENSE for the terms of the GNU GPL license.
+
+docker-VCFtools can be used to create a docker instance to use VCFtools.
+
+Copyright (C) 2021-2024 University of California Los Angeles ("Boutros Lab") All rights reserved.
+
+This program is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.
+
+This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.
