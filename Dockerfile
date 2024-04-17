@@ -1,8 +1,11 @@
-FROM blcdsdockerregistry/bl-base:1.0.0 AS builder
+ARG MINIFORGE_VERSION=23.3.1-1
+ARG UBUNTU_VERSION=23.04
+
+FROM condaforge/mambaforge:${MINIFORGE_VERSION} AS builder
 
 # Use conda to install tools and dependencies into /usr/local
 ENV VCFTOOLS_VERSION=0.1.16
-RUN conda create -qy -p /usr/local \
+RUN mamba create -qy -p /usr/local \
     -c bioconda \
     -c conda-forge \
     vcftools==${VCFTOOLS_VERSION} \
@@ -10,7 +13,15 @@ RUN conda create -qy -p /usr/local \
     tabix
 
 # Deploy the target tools into a base image
-FROM ubuntu:20.04
+FROM ubuntu:${UBUNTU_VERSION} AS final
 COPY --from=builder /usr/local /usr/local
 
-LABEL maintainer="Tim Sanders <tsanders@mednet.ucla.edu>"
+# Add a new user/group called bldocker
+RUN groupadd -g 500001 bldocker && \
+    useradd -r -u 500001 -g bldocker bldocker
+
+# Change the default user to bldocker from root
+USER bldocker
+
+LABEL maintainer="Mohammed Faizal Eeman Mootor <mmootor@mednet.ucla.edu>" \
+    org.opencontainers.image.source=https://github.com/uclahs-cds/docker-VCFtools
